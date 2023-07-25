@@ -20,6 +20,7 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [Head Elements](#head-elements)
 - [Embedded Content](#embedded-content)
 - [Body Elements](#body-elements)
+- [Syntax](#syntax-6)
 
 
 
@@ -81,6 +82,9 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | --- | --- | --- |
 | `<body>` | [Body](#html-body-tag) | This is where the main body of the content that is displayed lives in a html document (typically). |
 | `<p>` | [Paragraph](#html-p-tag) | Used to define a paragraph of text in a HTML document. The `<p>` tag is a block-level element, which means it starts on a new line and creates a separate block of content. |
+| `<h1>`,`<h2>`,`<h3>`,`<h4>`,`<h5>`,`<h6>` | [Headings](#html-heading-tags) | HTML provides six heading tags, `<h1>` to `<h6>`, that are used to define headings or subheadings in an HTML document. Headings help to structure the content, making it more organized and easily scannable for both readers and search engines. |
+
+
 
 
 
@@ -137,6 +141,35 @@ In this example, the `<body>` tag encloses the main content of the HTML document
 The content within the `<body>` tag is what users see and interact with when they visit the web page. It is essential to place all the content that should be displayed on the page within the `<body>` tag.
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+### HTML Heading Tags
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+Heading elements allow for placement of heads (titles) of sections. They’re broken into a series of graduated sizes: `<h1>` through `<h6>`.
+
+So that you can see how they work, on the left we have the code and on the right is the output:
+
+#### Code
+```html 
+<h1>Heading 1.</h1>
+<h2>Heading 2.</h2>
+<h3>Heading 3.</h3>
+<h4>Heading 4.</h4>
+<h5>Heading 5.</h5>
+<h6>Heading 6.</h6>
+```
+#### Output
+<h1>Heading 1.</h1>
+<h2>Heading 2.</h2>
+<h3>Heading 3.</h3>
+<h4>Heading 4.</h4>
+<h5>Heading 5.</h5>
+<h6>Heading 6.</h6>
+
+HTML provides six heading tags, `<h1>` to `<h6>`, that are used to define headings or subheadings in an HTML document. Headings help to structure the content, making it more organized and easily scannable for both readers and search engines.
+
+Syntax:
+Heading tags are opening and closing tags represented by angle brackets. The `<h1>` tag is used for the main heading, and the subsequent tags are used for subheadings, with `<h6>` being the smallest and least important subheading.
 
 ### HTML `<p>` Tag
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
@@ -460,6 +493,8 @@ To embed means to fix something inside another thing. Content from another sourc
 A common example is an embedded video. This would be like taking a video from YouTube and displaying it on your website.
 
 ## Body Elements
+[Jump Back](#contents)
+
 The content placed between `<body>` and `</body>` tags makes up most of the content on the page. It consists of nearly anything the developer can dream of, such as: embedded video, images, text, animation, tables of data, advertisements, even music. The sky’s the limit, but within the body tag is where you'll place it.
 
 Here is an example:
@@ -480,6 +515,8 @@ Here is an example:
 We use charset to set the exact character set we’re using and as mentioned earlier, UTF-8 is used for over 90% of websites. The [W3C actually recommends using UTF-8 for all websites.](https://www.w3.org/International/questions/qa-html-encoding-declarations)
 
 ## The Basic HTML Template
+[Jump Back](#contents)
+
 The code shown in the previous course step is actually the recommended basic template for all HTML web pages (meaning, regardless of what you add to the webpage, start with that code). Here it is again for reference:
 
 ```html
@@ -502,3 +539,16 @@ This template contains the minimum set of usual data a browser will need to pars
 *Rendering* technically means to take the HTML code and translate them into commands the Operating System can execute. Remember, at the end of the day, everything displayed on your screen is controlled by the hardware on your computer and your OS. When we say “render a webpage,” we mean: The web file is received by the browser and processed, the browser then “translates” and passes the data to the OS in a way it can understand and execute, your computer then processes the data and displays the resulting output. Simply put: rendering a web page is displaying a webpage.
 
 A note on indenting the lines in your HTML documents: It is good practice, as you develop your HTML skills, to use indentation. Although an HTML document does not require any indentation, it will certainly make your code easier to read and more manageable to work with.
+
+## Syntax
+[Jump Back](#contents)
+
+As a reminder, every spoken language has a general set of rules for how words and sentences should be structured. These rules are known as the syntax of that particular language.
+
+In programming languages, syntax serves the same purpose.
+
+Syntax is the rules you must follow when writing computer programs. Each language has its own syntax. Failing to use the syntax of a particular language correctly can mean that whatever program you are designing will not work at all.
+
+For example: If a computer language required you write “cmd:” (meaning “command”) at the beginning of each instruction, that would be part of the syntax of that language. And if you didn’t write “cmd:” at the beginning of an instruction, the computer would not be able to process and execute the instruction because you violated syntax.
+
+If you wrote the `<title>` tag like this: `<ttle>`, there would be a syntax error and your web page wouldn’t display properly (in this case, the title wouldn’t display).
