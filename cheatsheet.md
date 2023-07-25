@@ -93,6 +93,9 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<footer>` | [Footer](#html-footer-tag) | A tag that implies that all the content inside of it is important infomation about the webpage. Just like a footer on a book. |
 | `<main>` | [Main Content](#html-main-tag) | The HTML `<main>` element represents the most important content of the `<body>` of a document or portion of a document. |
 | `<a>` | [Anchor Tags](#html-a-tags) | The anchor `<a>` element is the HTML code used to create a link to another page. It instructs the browser to display content from another document (typically a web page). |
+| `<nav>` | [Navigation](#html-nav-tag) | The `<nav>` tag defines a set of navigation links. Navigation links are typically included on nav bars (a rectangular strip that includes links to the main pages on a website). 
+
+
 
 
 
@@ -152,6 +155,27 @@ In this example, the `<body>` tag encloses the main content of the HTML document
 The content within the `<body>` tag is what users see and interact with when they visit the web page. It is essential to place all the content that should be displayed on the page within the `<body>` tag.
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+### HTML `<nav>` Tag
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+The `<nav>` tag defines a set of navigation links. Navigation links are typically included on nav bars (a rectangular strip that includes links to the main pages on a website). They look like this:
+
+| [Home](#) | [About](#) | [FAQs](#) | [Contact](#) |
+| --- | --- | --- | --- |
+
+To create the above pictured navigation links, we would write our HTML code as follows:
+
+```html
+<nav>
+  <a href="Home page filename or URL">Home</a>
+  <a href="About page filename or URL">About</a>
+  <a href="FAQs page filename or URL">FAQs</a>
+  <a href="Contact page filename or URL">Contact</a>
+</nav>
+```
+
+Typically the nav element contains implicit links – meaning links on most nav bars on websites don’t usually take you to another website altogether.
 
 ### HTML `<a>` Tags
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
