@@ -10,6 +10,9 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [How to Contribute](#how-to-contribute)
 ### Cheatsheets
 - [HTML Cheatsheet](#html-cheatsheet)
+- [HTML Meta Tags](#html-meta-tags)
+- [HTML Browser Display Tags](#html-browser-displayed-tags)
+- [HTML Attributes](#html-attributes)
 - [CSS Cheatsheet](#css-cheatsheet)
 ### Details
 - [HTML Tag Details](#html-tag-details)
@@ -85,6 +88,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<p>` | [Paragraph](#html-p-tag) | Used to define a paragraph of text in a HTML document. The `<p>` tag is a block-level element, which means it starts on a new line and creates a separate block of content. |
 | `<h1>`,`<h2>`,`<h3>`,`<h4>`,`<h5>`,`<h6>` | [Headings](#html-heading-tags) | HTML provides six heading tags, `<h1>` to `<h6>`, that are used to define headings or subheadings in an HTML document. Headings help to structure the content, making it more organized and easily scannable for both readers and search engines. |
 | `<footer>` | [Footer](#html-footer-tag) | A tag that implies that all the content inside of it is important infomation about the webpage. Just like a footer on a book. |
+| `<main>` | [Main Content](#html-main-tag) | The HTML `<main>` element represents the most important content of the `<body>` of a document or portion of a document. |
 
 
 
@@ -93,8 +97,9 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 
 ### HTML Attributes
 
-| Attribute | Title | 
-| --- | --- | 
+| Attribute | Title | Description |
+| --- | --- | --- |
+| `id` | [Identification](#id-attribute) | The id attribute specifies a unique name for an HTML element. | 
 
 
 ## CSS Cheatsheet
@@ -145,6 +150,9 @@ The content within the `<body>` tag is what users see and interact with when the
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
 
 ### HTML `<main>` Tag
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+
 The HTML `<main>` element represents the most important content of the `<body>` of a document or portion of a document. It consists of content that is directly related to or expands upon the central topic of a document.
 
 For example:
@@ -491,6 +499,32 @@ Comments are not displayed on the rendered web page, but they can be viewed by i
 
 ## HTML Attribute Details
 In this section I'll go into more detail of how each HTML attribute works. I recommend using the linking structure available through the [HTML Attributes Cheatsheet](#html-attributes).
+
+### Id Attribute
+[Jump Back](#html-attributes)
+
+“Id” is short for “identification”. One of the most popular attributes is the id attribute.
+
+The id attribute specifies a unique name for an HTML element.
+
+For example, you can assign a specific `<p>` element the id (name) “paragraph” as follows:
+
+```html
+<p id="paragraph">This is some text.</p>
+```
+
+Now that you have that id, you can reference (bring up; refer to) it in your code later.
+
+You will learn exactly how to do this and why it's useful in an upcoming step.
+
+Ids are specific and you can only utilize one id per element. For example, you cannot assign the same `<h1>` element two different ids. Also, you cannot use the same id name for two different elements. For example, this would be incorrect:
+
+```html 
+<h2 id="heading"></h2>
+<h3 id="heading"></h3>
+```
+
+Ids must be specific to one element and cannot contain any spaces.
 
 ## CSS Details
 
