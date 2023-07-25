@@ -28,6 +28,7 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [File Paths](#file-paths)
 - [Absolute and Relative Paths](#absolute-and-relative-paths)
 - [Hypertext Reference](#hypertext-reference)
+- [Testing Code](#testing-code)
 
 
 
@@ -792,3 +793,11 @@ Whereas an explicit href attribute links to a file not contained within the fold
 
 Both of these will be clarified further in the next two assignments.
 
+## Testing Code
+It is wise to regularly test your code as you’re writing it. One way to do this with HTML is to save and run the code every few minutes, even if you aren’t done with the website yet.
+
+Failure to test code can often result in your website not displaying properly and you’re left sifting through a large amount of code attempting to locate the error(s). By running your code every couple/few lines, you can spot any errors as they come up.
+
+One way to do this is to save your file, run it in the browser, write more code, save your file again, and then click F5 in the browser (this will refresh the webpage with the newest version of your file).
+
+**It is recommended that you run (test) your code file after each new element is added.**
