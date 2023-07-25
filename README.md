@@ -26,7 +26,7 @@ The primary objectives of this course project are:
 
 The repository is organized into various folders, each representing a different project or exercise. As I progress through the course, I'll be adding more projects and resources here. Here's an overview of what you can find in this repository:
 
-- Project 1: [Project Name] // I'll fill these in at a later date.
+- Project 1: [hello_world.html](https://github.com/mouldimus/Pitman_HTML_CSS/blob/main/hello_world.html) 
 - Project 2: [Project Name]
 - Project 3: [Project Name]
 
