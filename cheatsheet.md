@@ -15,6 +15,13 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [HTML Tag Details](#html-tag-details)
 - [HTML Attribute Details](#html-attribute-details)
 - [CSS Details](#css-details)
+### Words and Phrases
+- [What's Metadata?](#metadata)
+- [Head Elements](#head-elements)
+- [Embedded Content](#embedded-content)
+- [Body Elements](#body-elements)
+
+
 
 ## What is HTML?
 
@@ -66,6 +73,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<html>` | [HyperText Markup Language](#html-html-tag) | The `<html>` tag is a fundamental element in HTML documents. It represents the root element of an HTML document, and it contains all other HTML elements, such as headings, paragraphs, images, and more. |
 | `<head>` | [Header](#html-head-tag) | This is the container for the information about the document |
 | `<title>` | [Title](#html-title-tag) | This is the title of the document. The title displays inside the browser tab, Search engine results and Social media posts. |
+| `<meta>` | [Metadata](#metadata) | Metadata is the data about data. 
 
 
 ### HTML Browser Displayed Tags
@@ -409,3 +417,88 @@ Comments are not displayed on the rendered web page, but they can be viewed by i
 In this section I'll go into more detail of how each HTML attribute works. I recommend using the linking structure available through the [HTML Attributes Cheatsheet](#html-attributes).
 
 ## CSS Details
+
+## Metadata
+[Jump Back](#contents)
+
+“Meta” comes from the word “beyond”.
+
+Metadata is data that gives data about, or describes, other data. Simply put, metadata means: data about data.
+
+In HTML, the `<meta>` tag is usually used to convey data to browsers and search engines that isn’t displayed to the user.
+
+Meta elements can be used to describe pages, provide keywords to help categorize the type of information in the content of the page, note the author of the document, and more.
+
+For example, the meta tag can be used to tell the search engine the name of an author as follows:
+
+```html
+<meta name="author" content="Lee Child">
+```
+
+The name here states type of metadata and the content provides a description. In this case, we are telling the search engine that the author is Lee Child.
+
+## Head Elements
+[Jump Back](#contents)
+
+The `<head>` element is a container for metadata pertaining to the HTML document itself, and should be placed between the opening `<html>` tag and the opening `<body>` tag.
+
+Head elements can contain:
+
+1. Titles
+2. Scripts (a computer program that is to be run by the browser)
+3. File attachments (such as CSS files, JavaScript files or even custom fonts)
+4. Character encoding
+5. Meta data
+
+The head element is typically placed near the top of an HTML file.
+
+## Embedded Content
+[Jump Back](#contents)
+
+To embed means to fix something inside another thing. Content from another source that is included as part of a page is referred to as “embedded content”. This typically refers to content that exists on another website.
+
+A common example is an embedded video. This would be like taking a video from YouTube and displaying it on your website.
+
+## Body Elements
+The content placed between `<body>` and `</body>` tags makes up most of the content on the page. It consists of nearly anything the developer can dream of, such as: embedded video, images, text, animation, tables of data, advertisements, even music. The sky’s the limit, but within the body tag is where you'll place it.
+
+Here is an example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Write title here.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      This is where all the content on the webpage goes.
+    </body>
+</html>
+```
+
+We use charset to set the exact character set we’re using and as mentioned earlier, UTF-8 is used for over 90% of websites. The [W3C actually recommends using UTF-8 for all websites.](https://www.w3.org/International/questions/qa-html-encoding-declarations)
+
+## The Basic HTML Template
+The code shown in the previous course step is actually the recommended basic template for all HTML web pages (meaning, regardless of what you add to the webpage, start with that code). Here it is again for reference:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Write title here.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+    </body>
+</html>
+```
+
+Glancing at the basic HTML example structure, you will notice that there are opening tags and, further down the page on the same indentation level, there are the corresponding closing tags.
+
+This template contains the minimum set of usual data a browser will need to parse a web page and render the content to the screen.
+
+*Rendering* technically means to take the HTML code and translate them into commands the Operating System can execute. Remember, at the end of the day, everything displayed on your screen is controlled by the hardware on your computer and your OS. When we say “render a webpage,” we mean: The web file is received by the browser and processed, the browser then “translates” and passes the data to the OS in a way it can understand and execute, your computer then processes the data and displays the resulting output. Simply put: rendering a web page is displaying a webpage.
+
+A note on indenting the lines in your HTML documents: It is good practice, as you develop your HTML skills, to use indentation. Although an HTML document does not require any indentation, it will certainly make your code easier to read and more manageable to work with.
