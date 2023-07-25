@@ -21,6 +21,7 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [Embedded Content](#embedded-content)
 - [Body Elements](#body-elements)
 - [Syntax](#syntax-6)
+- [Attributes](#attributes)
 
 
 
@@ -83,6 +84,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<body>` | [Body](#html-body-tag) | This is where the main body of the content that is displayed lives in a html document (typically). |
 | `<p>` | [Paragraph](#html-p-tag) | Used to define a paragraph of text in a HTML document. The `<p>` tag is a block-level element, which means it starts on a new line and creates a separate block of content. |
 | `<h1>`,`<h2>`,`<h3>`,`<h4>`,`<h5>`,`<h6>` | [Headings](#html-heading-tags) | HTML provides six heading tags, `<h1>` to `<h6>`, that are used to define headings or subheadings in an HTML document. Headings help to structure the content, making it more organized and easily scannable for both readers and search engines. |
+| `<footer>` | [Footer](#html-footer-tag) | A tag that implies that all the content inside of it is important infomation about the webpage. Just like a footer on a book. |
 
 
 
@@ -141,6 +143,37 @@ In this example, the `<body>` tag encloses the main content of the HTML document
 The content within the `<body>` tag is what users see and interact with when they visit the web page. It is essential to place all the content that should be displayed on the page within the `<body>` tag.
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+### HTML `<main>` Tag
+The HTML `<main>` element represents the most important content of the `<body>` of a document or portion of a document. It consists of content that is directly related to or expands upon the central topic of a document.
+
+For example:
+
+```html
+. . .
+<body>
+  <p>Cats are interesting creatures.</p>
+  <main>
+    <h1>Types of felines</h1>
+    <p>Lions, tiger and house cats are common examples of felines.</p>
+  </main>
+  <h2>Lions</h2>
+. . .
+```
+
+
+On a blog post, for example, the `<main>` element would be where the article is placed. There should only be one “main” element per HTML page.
+
+### HTML `<footer>` Tag
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+A footer is literally text that appears at the foot (bottom) of each page in a book or document.
+
+The `<footer>` tag defines a footer for a document or section.
+
+A footer element typically contains: authorship information, terms and conditions, copyright information, contact information and links to a company’s social media accounts. The bottom of most websites is the footer.
+
+It is an important part of a webpage because it is usually used to give the user information needed to contact the primary owner or manager of the website.
 
 ### HTML Heading Tags
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
@@ -339,6 +372,16 @@ The `<html>` tag is an opening and closing tag represented by angle brackets:
 ```
 
 #### Attributes:
+
+An attribute is a word or phrase used inside an element’s opening tag that controls the element’s behavior.
+
+For example, the image `<img>` tag allows you to place images inside your webpage. The src (source) attribute is used with this `<img>` tag; it gives the location of the image (where the image is being displayed from). You can see this in the following:
+
+```html
+<img src="https://www.petmd.com/sites/default/files/petmd-cat-happy-15.jpg">
+```
+
+The image tag tells the browser where to put the image on the page, while the src attribute gives the location to pull the image from.
 
 The `<html>` tag can include certain attributes, but it typically uses the `lang` attribute to specify the language of the document for localization and accessibility purposes:
 
