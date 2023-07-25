@@ -61,7 +61,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 ### HTML Meta Tags
 | Tag | Title | Description |
 | --- | --- | --- |
-| `<!-- -->` | [Comment](#html-comment-tag) | This tag is used to explain the purpose of your code, to yourself and other developers. *Do not* underestimate the power of code commenting. It is one the best tools to making you code easy to understand.
+| `<!-- -->` | [Comment](#html-comment-tag) | This tag is used to explain the purpose of your code, to yourself and other developers. *Do not* underestimate the power of code commenting. It is one the best tools to use to make your code easily understood and readable.
 | `<!DOCTYPE>` | [Document Type](#document-type-doctype-tag) | Tells the browser what Document type and version to render the file in. |
 | `<html>` | [HyperText Markup Language](#html-html-tag) | The `<html>` tag is a fundamental element in HTML documents. It represents the root element of an HTML document, and it contains all other HTML elements, such as headings, paragraphs, images, and more. |
 | `<head>` | [Header](#html-head-tag) | This is the container for the information about the document |
