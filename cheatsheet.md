@@ -25,6 +25,9 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [Body Elements](#body-elements)
 - [Syntax](#syntax-6)
 - [Attributes](#attributes)
+- [File Paths](#file-paths)
+- [Absolute and Relative Paths](#absolute-and-relative-paths)
+- [Hypertext Reference](#hypertext-reference)
 
 
 
@@ -89,6 +92,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<h1>`,`<h2>`,`<h3>`,`<h4>`,`<h5>`,`<h6>` | [Headings](#html-heading-tags) | HTML provides six heading tags, `<h1>` to `<h6>`, that are used to define headings or subheadings in an HTML document. Headings help to structure the content, making it more organized and easily scannable for both readers and search engines. |
 | `<footer>` | [Footer](#html-footer-tag) | A tag that implies that all the content inside of it is important infomation about the webpage. Just like a footer on a book. |
 | `<main>` | [Main Content](#html-main-tag) | The HTML `<main>` element represents the most important content of the `<body>` of a document or portion of a document. |
+| `<a>` | [Anchor Tags](#html-a-tags) | The anchor `<a>` element is the HTML code used to create a link to another page. It instructs the browser to display content from another document (typically a web page). |
 
 
 
@@ -148,6 +152,36 @@ In this example, the `<body>` tag encloses the main content of the HTML document
 The content within the `<body>` tag is what users see and interact with when they visit the web page. It is essential to place all the content that should be displayed on the page within the `<body>` tag.
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+### HTML `<a>` Tags
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+The anchor `<a>` element is the HTML code used to create a link to another page. It instructs the browser to display content from another document (typically a web page).
+
+As a note, in older versions of HTML, the word anchor meant what element means now (opening and closing tags and the text in between). Anchor text is the clickable text that is displayed. For example, in this link the anchor text is “The Tech Academy”:
+
+[The Tech Academy](https://www.learncodinganywhere.com/)
+
+As a note, by default, most browsers display such links as follows:
+
+![Links](./images/Links.png)
+
+The anchor element needs an attribute called an “href attribute.” “Href” is short for “hypertext reference.” This attribute contains the location of the resource or document that the author intends to link to.
+
+Here is what it looks like:
+
+```html
+<a href="https://learncodinganywhere.com/">Check out The Tech Academy!</a>
+```
+
+This would display as:
+
+[Check out The Tech Academy!](https://learncodinganywhere.com/)
+
+and would take the user to the page at https://learncodinganywhere.com/.
+
+
+
 
 ### HTML `<main>` Tag
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
@@ -629,3 +663,108 @@ Syntax is the rules you must follow when writing computer programs. Each languag
 For example: If a computer language required you write “cmd:” (meaning “command”) at the beginning of each instruction, that would be part of the syntax of that language. And if you didn’t write “cmd:” at the beginning of an instruction, the computer would not be able to process and execute the instruction because you violated syntax.
 
 If you wrote the `<title>` tag like this: `<ttle>`, there would be a syntax error and your web page wouldn’t display properly (in this case, the title wouldn’t display).
+
+## File Paths
+[Jump Back](#contents)
+
+As a reminder, a hierarchy refers to arranging things according to rank or status. It refers to arranging items according to their relative importance or characteristics.
+
+A common example of hierarchy would be how most companies are arranged: the bosses and their functions are compartmented. For example: there’s a Chief Executive Officer (CEO; boss) over the company, and a Chief Financial Officer (CFO) that oversees the accounting department.
+
+Storage hierarchy refers to a system where various data storage devices are given a hierarchical importance ranking as far as how they are used by the CPU. The primary factor influencing a given device's ranking is its response time – how long the device takes to return a requested piece of stored data when the CPU requests the data. Faster response times are ranked higher.
+
+A “hierarchical file system” refers to how files are organized and displayed.
+
+It is how drives, folders and files are organized and displayed on a computer. In a hierarchical file system, the drives, folders, and files are shown in groups, which allows the user to see only the files they want to.
+
+Here is a hierarchical file system diagrammed out:
+
+![hierachy](./images/hierarchy.png)
+
+Inside hierarchical file systems are directories. A directory is a location for storing files on your computer. Directories are another word for “folders.” The terms folder and directory are interchangeable.
+
+The route to a file is called a “file path.” The “file path” is the address of a file and specifies the exact location of a file. It provides a “path” to the file.
+
+It says, “You can find the file named ‘Winter,’ inside the folder named ‘Poems,’ inside the C drive.”
+
+The various components of a path are separated by a character. Usually this character is a slash, backslash or colon (“/,” “\” or “:” respectively).
+
+The “/” (slash) symbol separates the different parts of a collection of electronic documents in computers and it has been used for a long time. It was created as an aid to organizing and finding the various files you might store on a computer.
+
+Slash is used to show that one item is below another. The item on the left is above the one on the right. An example of this could be:
+
+```
+C:/Recipes/BakedChickenRecipe.txt
+```
+In this example, the drive is the C Drive (name of the hard drive), the folder is called “Recipes,” which contains a text document called “BakedChickenRecipe.”
+
+Code should be organized by file and folder. Here is an example diagram of a web site's folder structure:
+
+![File Structure](/images/PastedImage_csubjxnjbja4jfx7zywkdkhhrdh4xxe50013173511.png)
+A file path describes the location of a file in a web site's folder structure. File paths are used when linking an HTML file to external files like:
+
+1. Style sheets (files containing the CSS code that styles the website)
+2. JavaScript files
+3. Web pages
+4. Images
+
+[Jump Back](#contents)
+
+## Absolute and Relative Paths
+A standard path usually consists of three components:
+
+1. A ***volume*** (a single accessible storage area with a single file system – typically residing in a single partition [section] of a hard disk) or drive letter followed by a colon ( : ) in Windows. For example, “C:” (drive) or “D:” (drive).
+2. A **directory name**. A backslash (\) separates subdirectories within the nested directory hierarchy. Forward slashes are frequently accepted as well. For example, “\Documents” or “\Program Files”.
+3. A filename. The backslash separates the file path and the filename. For example, “\letter.docx” or "\picture.jpeg".
+
+*If all three of these components are present, the path is absolute.*
+
+*If no volume or drive letter is specified and the directory name begins with a backslash, the path is relative.*
+
+An absolute path may look something like:
+
+```bash
+C:\GitHubRepos\HTML_CSS\PathProject\FileName.html
+```
+On the other hand, a relative path may have differing beginnings depending on your folder structure. Commonly seen examples include:
+
+- **Picture.jpg** – where the picture file is in the same folder as the requesting file.
+- **images/picture.jpg** and **./images/picture.jpg** – where the picture file is located in a folder called images on the same folder level as the requesting file.
+- **../images/picture.jpg** – where the picture file is located in a folder called images which is in the folder one level up from the current folder of the requesting file.
+
+It is recommended that you use relative paths when linking to images, CSS files, JavaScript files, etc. The reason for this is that if your code is run on a different machine, the absolute path may change – but the relative path always stays the same.
+
+## Hypertext Reference
+There are two kinds of `href` attributes:
+
+1. Implicit
+2. Explicit
+
+In normal English, **implicit**
+: *“implied, though not plainly stated”.*
+
+**Explicit**
+: *“stated clearly and in detail.”*
+
+Implicit `href` attributes are used to create a link to another webpage that is located in the same folder as the page the `<a>` tag is in. If we use the folder that is your local repository as an example, an implicit link would link to a file within that folder.
+
+An anchor element with an implicit href attribute would be written as follows:
+
+```html
+<a href="yourfilename.html">
+  Whatever link title you choose
+</a>
+```
+
+Whereas an explicit href attribute links to a file not contained within the folder(s) associated with your website. Typically explicit href attribute links are to external websites (other websites). The `href` attribute from the previous step 
+
+```html
+<a href="https://learncodinganywhere.com/">
+  Check out The Tech Academy!
+</a>
+```
+
+ is an example of an explicit link.
+
+Both of these will be clarified further in the next two assignments.
+
