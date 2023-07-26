@@ -97,6 +97,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<a>` | [Anchor Tags](#html-a-tags) | The anchor `<a>` element is the HTML code used to create a link to another page. It instructs the browser to display content from another document (typically a web page). |
 | `<nav>` | [Navigation](#html-nav-tag) | The `<nav>` tag defines a set of navigation links. Navigation links are typically included on nav bars (a rectangular strip that includes links to the main pages on a website). 
 | `<font>`  | [Font](#html-font-tag) | The font element can be utilized to choose various font attributes (such as color, type and size). | 
+| `<b>`, `<u>`, `<i>` | [Bold, Underlined and Italicized](#html-b-u-and-i-tags) | Make text **BOLD**, <u>Underlined</u> and *Italicised* respectively. |
 
 
 
@@ -158,6 +159,27 @@ In this example, the `<body>` tag encloses the main content of the HTML document
 The content within the `<body>` tag is what users see and interact with when they visit the web page. It is essential to place all the content that should be displayed on the page within the `<body>` tag.
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+### HTML `<b>`, `<u>` and `<i>` Tags
+
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+
+In addition to the `<strong>` element, there are other elements that can be used to alter and emphasize text:
+
+- `<b>`: makes text bold
+- `<i>`: italicizes text
+- `<u>`: underlines text
+
+To display a sentence that says:
+
+**This is bold,** *this is italicized* and <u>this is underlined</u>
+
+we would write our code like this:
+
+```html
+<p><b>This is bold, </b><i>this is italicized</i> and <u>this is underlined</u></p>
+```
 
 ### HTML `<font>` Tag
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
