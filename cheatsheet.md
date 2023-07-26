@@ -29,6 +29,7 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [Absolute and Relative Paths](#absolute-and-relative-paths)
 - [Hypertext Reference](#hypertext-reference)
 - [Testing Code](#testing-code)
+- [Linking to External Files](#linking-to-external-files)
 
 
 
@@ -107,7 +108,8 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 
 | Attribute | Title | Description |
 | --- | --- | --- |
-| `id` | [Identification](#id-attribute) | The id attribute specifies a unique name for an HTML element. | 
+| `id` | [Identification](#id-attribute) | The `id` attribute specifies a unique name for an HTML element. | 
+|`src` | [Source](#src-attribute) | The `src` attribute is used to specify the source or location of external resources, typically associated with multimedia elements like images, audio, video, scripts, and iframes. |
 
 
 ## CSS Cheatsheet
@@ -559,7 +561,43 @@ Comments are not displayed on the rendered web page, but they can be viewed by i
 ## HTML Attribute Details
 In this section I'll go into more detail of how each HTML attribute works. I recommend using the linking structure available through the [HTML Attributes Cheatsheet](#html-attributes).
 
-### Id Attribute
+### `src` Attribute
+In HTML, the `src` attribute is used to specify the source or location of external resources, typically associated with multimedia elements like images, audio, video, scripts, and iframes. It is an essential attribute for including external content into a web page. The `src` attribute is used with various HTML elements, and its specific purpose depends on the element it is applied to.
+
+Here are some common HTML elements that use the `src` attribute:
+
+1. `<img>`: The `src` attribute in the `<img>` element specifies the URL of the image to be displayed on the web page. For example:
+   ```html
+   <img src="image.jpg" alt="A beautiful landscape">
+   ```
+
+2. `<script>`: The `src` attribute in the `<script>` element is used to link an external JavaScript file to the HTML page. This allows you to include external scripts and functionality into your web page. For example:
+   ```html
+   <script src="myscript.js"></script>
+   ```
+
+3. `<iframe>`: The `src` attribute in the `<iframe>` element specifies the URL of the content to be displayed within the iframe. This is often used to embed content from other websites into a page. For example:
+   ```html
+   <iframe src="https://www.youtube.com/embed/video_id"></iframe>
+   ```
+
+4. `<audio>`: The `src` attribute in the `<audio>` element is used to specify the URL of an audio file to be played on the web page. For example:
+   ```html
+   <audio controls>
+     <source src="song.mp3" type="audio/mpeg">
+   </audio>
+   ```
+
+5. `<video>`: The `src` attribute in the `<video>` element is used to specify the URL of a video file to be played on the web page. For example:
+   ```html
+   <video controls>
+     <source src="video.mp4" type="video/mp4">
+   </video>
+   ```
+
+It's important to ensure that the `src` attribute points to a valid and accessible resource. If the resource is not found or cannot be accessed, it may lead to broken elements on the web page. Additionally, be cautious when using external scripts (`<script>`), as they can potentially introduce security risks if they come from untrusted sources. Always use reliable sources for external resources to maintain the security and stability of your web page.
+
+### `id` Attribute
 [Jump Back](#html-attributes)
 
 “Id” is short for “identification”. One of the most popular attributes is the id attribute.
@@ -801,3 +839,25 @@ Failure to test code can often result in your website not displaying properly an
 One way to do this is to save your file, run it in the browser, write more code, save your file again, and then click F5 in the browser (this will refresh the webpage with the newest version of your file).
 
 **It is recommended that you run (test) your code file after each new element is added.**
+
+## Linking to External Files
+A common practice is to separate HTML files from JavaScript files – meaning, the code exists in different documents (.html docs and .js docs). This allows for a better organization of code.
+
+In our earlier example of the JavaScript alert box, we can do this by first creating a JavaScript file that contains the following code:
+
+```js
+alert("Hello, World! I am an alert box!");
+```
+
+We would save this file as Hello_World.js and then we open a new file. In this new file we write:
+
+```html
+<!DOCTYPE html>
+<html>
+  <script src="Hello_World.js"></script>
+</html>
+```
+
+As mentioned earlier, “src” is short for “source” and gives the source (location) of a file.
+
+We then would save our HTML as Hello_World.html (or something) and run it. We are telling our HTML file to pull code from our JavaScript file.
