@@ -96,7 +96,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<main>` | [Main Content](#html-main-tag) | The HTML `<main>` element represents the most important content of the `<body>` of a document or portion of a document. |
 | `<a>` | [Anchor Tags](#html-a-tags) | The anchor `<a>` element is the HTML code used to create a link to another page. It instructs the browser to display content from another document (typically a web page). |
 | `<nav>` | [Navigation](#html-nav-tag) | The `<nav>` tag defines a set of navigation links. Navigation links are typically included on nav bars (a rectangular strip that includes links to the main pages on a website). 
-
+| `<font>`  | [Font](#html-font-tag) | The font element can be utilized to choose various font attributes (such as color, type and size). | 
 
 
 
@@ -158,6 +158,38 @@ In this example, the `<body>` tag encloses the main content of the HTML document
 The content within the `<body>` tag is what users see and interact with when they visit the web page. It is essential to place all the content that should be displayed on the page within the `<body>` tag.
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+### HTML `<font>` Tag
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+The font element can be utilized to choose various font attributes (such as color, type and size).
+
+There are two ways to specify color using the font element and color attribute:
+
+1. By writing the color like:
+
+```html
+<font color="yellow">Write text here</font>
+```
+
+2. Specify the color using its hex code (a way of specifying color using hexadecimal values). For example:
+
+```html
+<font color="#0000FF">Write text here</font>
+```
+
+Here is a useful chart to find the hex code for various colors:
+
+[HTML Color Codes Chart 🎨](https://www.rapidtables.com/web/color/html-color-codes.html)
+
+To assign a font color to an element (such as a paragraph) you write your code as follows:
+
+```html
+<p><font color="green">This text is written in green.</font></p>
+```
+
+
+
 
 ### HTML `<nav>` Tag
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
