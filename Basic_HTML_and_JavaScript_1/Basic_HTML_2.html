@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating A Function</title>
+</head>
+<body>
+    <button onclick="My_First_Function()">
+        Click Me!
+    </button>
+    <p id="Irish"></p>
+    <script>
+        function My_First_Function() {        // A function that applies a green font color to the text "Kiss me, I'm Irish!"
+            var String = "Kiss me, I'm Irish!";
+            var result = String.fontcolor("green");
+            document.getElementById("Irish").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
