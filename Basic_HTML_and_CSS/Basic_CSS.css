@@ -1,0 +1,18 @@
+body{
+    background-color: #222;
+    color: #ccc;
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{
+    text-shadow: #1c1c1c 2px 2px 1px;
+    text-align: left; 
+}
+hr{
+    border: 0.25px solid #444;
+}
+p {
+    text-align: justify;
+    color: #bbbbc8;
+}
