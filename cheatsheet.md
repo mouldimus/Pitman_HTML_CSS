@@ -98,6 +98,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<nav>` | [Navigation](#html-nav-tag) | The `<nav>` tag defines a set of navigation links. Navigation links are typically included on nav bars (a rectangular strip that includes links to the main pages on a website). 
 | `<font>`  | [Font](#html-font-tag) | The font element can be utilized to choose various font attributes (such as color, type and size). | 
 | `<b>`, `<u>`, `<i>` | [Bold, Underlined and Italicized](#html-b-u-and-i-tags) | Make text **BOLD**, <u>Underlined</u> and *Italicised* respectively. |
+| `<style>` | [Style](#html-style-tag) | The style element is used to define the style information (like color) for an HTML document. |
 
 
 
@@ -159,6 +160,36 @@ In this example, the `<body>` tag encloses the main content of the HTML document
 The content within the `<body>` tag is what users see and interact with when they visit the web page. It is essential to place all the content that should be displayed on the page within the `<body>` tag.
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+### HTML `<style>` Tag
+
+The style element is used to define the style information (like color) for an HTML document.
+
+Within the style element we can include the color.
+
+Here is an example:
+
+```html 
+<style>
+  p {color: red;}
+</style>
+<p>This paragraph is written in red.</p>
+```
+
+Additionally, using the style element allows you to specify the color using an rgb code (values given to red, green and blue).
+
+Here is another useful link for rgb codes:
+
+[Colors RGB](https://www.w3schools.com/colors/colors_rgb.asp)
+
+For example:
+
+```html
+<style>
+  p {color: rgb(170, 66, 245);}
+</style>
+<p>This paragraph is written in purple.</p>
+```
 
 ### HTML `<b>`, `<u>` and `<i>` Tags
 
