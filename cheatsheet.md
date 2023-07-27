@@ -99,6 +99,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<font>`  | [Font](#html-font-tag) | The font element can be utilized to choose various font attributes (such as color, type and size). | 
 | `<b>`, `<u>`, `<i>` | [Bold, Underlined and Italicized](#html-b-u-and-i-tags) | Make text **BOLD**, <u>Underlined</u> and *Italicised* respectively. |
 | `<style>` | [Style](#html-style-tag) | The style element is used to define the style information (like color) for an HTML document. |
+| `<div>` | [Division](#html-div-tag) | The `<div>` tags define a division or a section in an HTML document. |
 
 
 
@@ -161,7 +162,34 @@ The content within the `<body>` tag is what users see and interact with when the
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
 
+### HTML `<div>` Tag
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+The `<div>` tags define a division or a section in an HTML document. The div element is often used as a container for other HTML elements to style them or make specific changes to the content within that particular div tag.
+
+Example:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your title here</title>
+  </head>
+  <body>
+    <h1>Your heading here</h1>
+
+    <div style="color: blue;">
+      <h2>Your div heading here</h2>
+      <p>Your div paragraph here</p>
+    </div>
+  </body>
+</html>
+```
+
+All of the elements contained within the `<div>` element will be written in blue.
+
 ### HTML `<style>` Tag
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
 
 The style element is used to define the style information (like color) for an HTML document.
 
