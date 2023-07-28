@@ -178,6 +178,54 @@ The action attribute specifies *where* to send form-data when a form is submitte
 
 The method attribute specifies *how* to send form-data (while the action attribute gives the page to send the form-data to). The method attribute can contain GET or POST.
 
+#### Creating a Form
+Here is the HTML code for creating a basic form:
+
+```html
+<form action="" method="get">
+  First name: <input type="text" name="First_Name"><br>
+  Last name: <input type="text" name="Last_Name">
+  <input type="submit" value="Submit">
+</form>
+```
+
+We left the quotation marks after the action attribute blank because we aren’t sending the form data anywhere at this point.
+
+The `<input>` tag specifies a field where a user can enter data.
+
+The type attribute specifies the type of user input (text, checkbox, password, etc.). In the above code, we use the type attribute “submit”, which creates a submit button.
+
+<input type="submit" value="Submit">
+
+The name attribute specifies the name of an `<input>` element.
+
+The value attribute specifies the value of an `<input>` element. For example: if you use a button, the value attribute defines what text will be displayed on the button.
+
+To create a form that looks like this:
+
+<form action="" method="get">
+  First name: <input type="text" name="First_Name"><br>
+  Last name: <input type="text" name="Last_Name"><br>
+  Email: <input type="email" name="Email"><br>
+  Password: <input type="password" name="Password"><br>
+  <input type="submit" value="Submit">
+</form>
+
+We would write this code:
+
+```html
+<form action="" method="get">
+  First name: <input type="text" name="First_Name"><br>
+  Last name: <input type="text" name="Last_Name"><br>
+  Email: <input type="email" name="Email"><br>
+  Password: <input type="password" name="Password"><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+
+
+
 ### HTML `<div>` Tag
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
 
