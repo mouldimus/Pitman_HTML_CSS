@@ -100,6 +100,7 @@ Let's dive into the world of HTML and CSS, and make your web development journey
 | `<b>`, `<u>`, `<i>` | [Bold, Underlined and Italicized](#html-b-u-and-i-tags) | Make text **BOLD**, <u>Underlined</u> and *Italicised* respectively. |
 | `<style>` | [Style](#html-style-tag) | The style element is used to define the style information (like color) for an HTML document. |
 | `<div>` | [Division](#html-div-tag) | The `<div>` tags define a division or a section in an HTML document. |
+| `<form>` | [Form](#html-form-tag) | The `<form>` tag is used to create a form that allows users to input data. |
 
 
 
@@ -161,6 +162,21 @@ In this example, the `<body>` tag encloses the main content of the HTML document
 The content within the `<body>` tag is what users see and interact with when they visit the web page. It is essential to place all the content that should be displayed on the page within the `<body>` tag.
 
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+### HTML `<form>` Tag
+[HTML Tags Cheatsheet](#html-browser-displayed-tags)
+
+Now let’s get back to coding!
+
+The `<form>` tag is used to create a form that allows users to input data. Here is a typical way to write the `<form>` tag:
+
+```html
+<form action="" method="post">
+```
+
+The action attribute specifies *where* to send form-data when a form is submitted.
+
+The method attribute specifies *how* to send form-data (while the action attribute gives the page to send the form-data to). The method attribute can contain GET or POST.
 
 ### HTML `<div>` Tag
 [HTML Tags Cheatsheet](#html-browser-displayed-tags)
