@@ -1,0 +1,19 @@
+.container {
+    background-color: #333;
+    color: #ddd;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 5px;
+    
+}
+.container p {
+    color: #ccccd9;
+}
+.code {
+    white-space:pre-line;
+    color: #aaa;
+    background-color: #111;
+    font-family: monospace;
+    padding: 10px 10px 10px 20px;
+    border-left: #008800 5px solid;
+}
