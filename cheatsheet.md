@@ -31,7 +31,7 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [Testing Code](#testing-code)
 - [Linking to External Files](#linking-to-external-files)
 - [Flexbox](#flexbox)
-
+- [Classes vs. IDs](#classes-vs-ids)
 
 
 ## What is HTML?
@@ -1042,3 +1042,34 @@ We then would save our HTML as Hello_World.html (or something) and run it. We ar
 
 ## Flexbox
 Flexbox is short for “flexible box” and is a tool in CSS that allows for a flexible layout structure. It can be used to make websites more responsive.
+
+## Classes vs. IDs
+Browsers render both Classes and IDs in the same way but there are some differences between the two.
+
+Each element can only have one ID, whereas any element can have any number of Classes applied to it.
+
+IDs must be unique to a page and is used to identify one element.
+
+A class can be used on multiple elements.
+
+And so, if multiple objects need the same styling, use a class.
+
+For example: a website with a “3-column layout” may want the same styles applied to each column:
+
+```html
+<div class="column"></div>
+<div class="column"></div>
+<div class="column"></div>
+```
+
+What if one of the columns needs to be bigger? We add another class:
+
+```html
+<div class="column bigger"></div>
+```
+
+An ID is a unique identifier, such as a person’s full name: Jack Robert Shepard.
+
+A class would then be the descriptors associated with that person – “Doctor”, “Tall”, “Male”, “Brown Hair”.
+
+IDs can also be used for “hash values” in URLs. The link #sectiononclasses will automatically scroll to the section of the page where there is an element with the ID = "sectiononclasses".
