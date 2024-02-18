@@ -30,6 +30,7 @@ Welcome to the HTML and CSS Cheat Sheet! This comprehensive guide is designed to
 - [Hypertext Reference](#hypertext-reference)
 - [Testing Code](#testing-code)
 - [Linking to External Files](#linking-to-external-files)
+- [Flexbox](#flexbox)
 
 
 
@@ -1038,3 +1039,6 @@ We would save this file as Hello_World.js and then we open a new file. In this n
 As mentioned earlier, “src” is short for “source” and gives the source (location) of a file.
 
 We then would save our HTML as Hello_World.html (or something) and run it. We are telling our HTML file to pull code from our JavaScript file.
+
+## Flexbox
+Flexbox is short for “flexible box” and is a tool in CSS that allows for a flexible layout structure. It can be used to make websites more responsive.
