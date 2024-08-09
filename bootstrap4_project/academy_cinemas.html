@@ -16,27 +16,31 @@
 <body>
     <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-light" href="#about">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-light" href="#showtimes">Showtimes</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-light" href="#deals">Deals</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
-                </form>
+        <!--navbar-->
+        <nav class="navbar sticky-top navbar-expand-lg bg-info">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#about">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#showtimes">Showtimes</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#deals">Deals</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary text-light" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
+        <!--/navbar-->
 
+        <!--title-->
         <div class="jumbotron jumbotron-fluid bg-info">
             <div class="container text-center">
                 <h1 class="display-4 text-light">Academy Cinemas</h1>
@@ -44,13 +48,15 @@
                 </p>
             </div>
         </div>
+        <!--/title-->
 
+        <!--About section-->
         <div class="container" id="about">
-            <div class="row">
-                <div class="col-sm">
+            <div class="row align-items-start">
+                <div class="col">
                     <img src="./imgs/pdx.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="col-sm">
+                <div class="col">
                     <h3>Accommodations</h3>
                     <p>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.
                     </p>
@@ -59,11 +65,11 @@
                     <p>Relax in our, extra-wide, plush cushioned recliners. Our seating arrangement is disability
                         friendly &#9855;.</p>
                 </div>
-                <div class="col-sm">
+                <div class="col">
                     <h3>Now Playing:</h3>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link active">
                                 Kong: Skull Island
                             </a>
                         </li>
@@ -81,13 +87,16 @@
                 </div>
             </div>
         </div>
+        <!--/About section-->
 
         <!--showtimes-->
 
         <div class="container" id="showtimes">
+            <h3>Showtimes</h3>
             <div class="card-deck">
                 <div class="card">
-                    <img src="./imgs/ghostintheshell.jpg" class="card-img-top" alt="...">
+                    <img src="./imgs/ghostintheshell.jpg" class="card-img-top h-50" style="object-fit: cover;"
+                        alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Ghost in the Shell</h5>
                         <p class="card-text">
@@ -104,7 +113,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./imgs/kongskullisland.jpg" class="card-img-top" alt="...">
+                    <img src="./imgs/kongskullisland.jpg" class="card-img-top h-50" style="object-fit: cover;"
+                        alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Kong: Skull Island</h5>
                         <p class="card-text">
@@ -120,7 +130,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./imgs/beautyandthebeast.jpg" class="card-img-top" alt="...">
+                    <img src="./imgs/beautyandthebeast.jpg" class="card-img-top h-50" style="object-fit: cover;"
+                        alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Beauty and the Beast</h5>
                         <p class="card-text">
