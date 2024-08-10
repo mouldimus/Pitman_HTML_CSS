@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <title>Your Name Here</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
 </head>
 
@@ -16,9 +20,9 @@
     <!--Navbar-->
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
+        <a class="about-link" href="#About">About</a>
+        <a class="github-link" href="#GitHub">GitHub</a>
+        <a class="contact-link" href="#Contact">Contact</a>
     </div>
 
     <!--Breaks inserted to add space between navbar and the first heading-->
@@ -35,42 +39,37 @@
     </div>
 
     <!--Video text-->
-    <div class="Video_Text">
-        <h1 class="white-text">Thomas Hayward's Portfolio</h1>
-        <strong>
-            <p class="center">
-                <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                    <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute
-                    authority to arrange a stage or
-                    <br>field of battle and to command such unswervingly dutiful actors or troops.
-                </q>
-                <br> -Joseph Weizenbaum
-                <br>
-                <br> My name is Thomas Hayward. Welcome to my portfolio website. On it, I will tell you about my
-                background and
-                experience.
-                <br>
-                <br> Thank you for stopping by and enjoy!
-            </p>
-        </strong>
+    <div class="Video_Text sans">
+        <h1 class="white-text">Thomas Hayward</h1>
+        <p class="center sans">
+            <q class="">Everyone should know how to program a computer, because it teaches you
+                know to
+                think.</q>
+            <br> - Steve Jobs
+            <br>
+            <br> My name is Thomas Hayward. Welcome to my portfolio website. On it, I will tell you about my background
+            and experience.
+            <br>
+            <br> Thank you for stopping by and enjoy!
+        </p>
     </div>
 
     <!--About section-->
     <div class="Row" id="About">
         <!--Left column-->
         <div class="Column_2">
-            <img src="images/html_custom.png" alt="Replace with your own image and description">
+            <img src="images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="Replace with your own image and description">
         </div>
         <!--Right column-->
         <div class="Column_1">
-            <h1>About</h1>
+            <h1 class="about">About</h1>
             <p>
-                I am a software developer who loves to code! As a father of two, I enjoy time with my family and
-                traveling.
+                I am a software developer who loves to code! Sometimes there's nothing better than cracking a problem
+                you've been stuck on for weeks.
                 <br>
                 <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
                     Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and
-                programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                programming languages: HTML, CSS, JavaScript, SQL, Bash and more.
                 <br>
                 <br>I am a full-stack developer and would love to work with you on your project. <a
                     href="#Contact">Contact</a> me below!
@@ -82,18 +81,17 @@
     <div class="Row" id="GitHub">
         <!--Left column-->
         <div class="Column_1">
-            <h1>GitHub</h1>
+            <h1 class="github">GitHub</h1>
             <p>
                 You can view my coding projects on my GitHub profile here:
                 <br>
-            <p class="center"><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy Github</a>
+            <p class="center"><a href="https://github.com/mouldimus" target="_blank">mouldimus</a>
             </p>
             </p>
         </div>
         <!--Right column-->
         <div class="Column_2">
-            <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/GitHub.png"
-                    alt="GitHub Logo"></a>
+            <a href="https://github.com/mouldimus" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
         </div>
     </div>
 
@@ -101,11 +99,11 @@
     <div class="Row" id="Contact">
         <!--Contact image, left column-->
         <div class="Column_2 Column_tall">
-            <img src="images/html_custom.png" alt="Contact_Image">
+            <img src="images/th_pp_square.JPG" alt="Contact_Image">
         </div>
         <!--Contact form, right column-->
         <div class="Column_1 Column_tall">
-            <h1>Contact</h1>
+            <h1 class="contact">Contact</h1>
             <!--This specifies where and how to send the form data; we are leaving it blank-->
             <form action="" method="POST">
                 <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
